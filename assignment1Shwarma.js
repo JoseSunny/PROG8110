@@ -31,7 +31,7 @@ module.exports = class ShwarmaOrder extends Order{
             case OrderState.WELCOMING:
                 this.stateCur = OrderState.ITEM;
                 aReturn.push("Welcome to Jose Restaurant.");
-                aReturn.push("What would you like to have ? \n Shawarma \n Burger \n Pizaa");                
+                aReturn.push("What would you like to have ? \n Shawarma \n Burger \n Pizza");                
                 break;
             case OrderState.ITEM:
                 this.stateCur = OrderState.SIZE;
