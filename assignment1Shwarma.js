@@ -87,7 +87,7 @@ module.exports = class ShwarmaOrder extends Order{
             case OrderState.DESSERT:
                 this.stateCur = OrderState.DRINKS
                 if(sInput.toLowerCase() != "no"){
-                    this.sDessert = "Dessert:"+sInput;;
+                    this.sDessert ="Dessert:"+ sInput;
                     total =total+4;
                 }                             
                 aReturn.push("Would you like drinks with that?");
@@ -104,7 +104,7 @@ module.exports = class ShwarmaOrder extends Order{
                 if(this.sDrinks){
                     aReturn.push(this.sDrinks);
                 }
-                if(this.sCake){
+                if(this.sDessert){
                     aReturn.push(this.sDessert);
                 }
                 aReturn.push("Estimated Amount  ="+total);
